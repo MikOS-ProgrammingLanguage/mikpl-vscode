@@ -1,0 +1,71 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "mik",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#block-comments"
+		},
+		{
+			"include": "#base-types"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.mik",
+					"match": "\\b(mikf|mikas|struct|if|else|elif|return)\\b"
+				},
+				{
+					"name": "keyword.operator.mik",
+					"match": "\\b(={1,2}|=|\\+|\\-|\\*|\\/)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.mik",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.mik",
+					"match": "\\\\."
+				}
+			]
+		},
+		"block-comments": {
+			"name": "comment.block.mik",
+			"begin": "\\/\\*",
+			"end": "\\*\\/",
+			"patterns": []
+		},
+		"comments": {
+			"name": "comment.mik",
+			"begin": "\\/\\/",
+			"end": "$\\n?",
+			"patterns": []
+		},
+		"base-types": {
+			"patterns": [
+				{
+					"name": "storage.type.mik",
+					"match": "\\b(int|flt|str|char)\\b"
+				},
+				{
+					"name": "constant.numeric.mik",
+					"match": "\\b[0-9]+\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.mik"
+}

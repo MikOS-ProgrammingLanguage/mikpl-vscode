@@ -1,0 +1,36 @@
+#yoink <test_f.milk>
+int a = 10
+int b = 20
+str bb = "Hello "
+str cc = "World!"
+int c = a+b
+
+/*
+Hello there fellow multi line cmnt
+*/
+
+// success
+
+mikf add(int a, int b) -> int {
+	int c = a+b
+	return c
+}
+
+mikf div(int a, int b) -> int {
+	int c = a/b
+	return c
+}
+
+int wtf = add(1, 20)
+
+mikas add_lol() -> int {
+	addq %rdi, %rsi
+	movq %rdi, %rax
+	ret
+}
+
+int wohooo = 1
+
+if (wohooo == 5) {
+	str sdufhgfhghdf = "yes"
+}

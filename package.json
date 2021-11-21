@@ -1,0 +1,25 @@
+{
+    "name": "mikpl",
+    "displayName": "mikpl",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mik",
+            "aliases": ["mik", "mik"],
+            "extensions": ["mik", "milk"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mik",
+            "scopeName": "source.mik",
+            "path": "./syntaxes/mik.tmLanguage.json"
+        }]
+    }
+}
