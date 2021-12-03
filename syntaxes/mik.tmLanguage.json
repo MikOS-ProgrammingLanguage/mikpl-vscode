@@ -58,7 +58,7 @@
 			"patterns": [
 				{
 					"name": "storage.type.mik",
-					"match": "\\b(int|flt|str|char|cock)\\b"
+					"match": "\\b(int|flt|str|char|cock|uint8_t|uint16_t|uint32_t|uint64_t|int8_t|int16_t|int32_t|int64_t)\\b"
 				},
 				{
 					"name": "constant.numeric.mik",
