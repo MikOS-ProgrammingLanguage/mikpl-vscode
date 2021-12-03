@@ -16,9 +16,6 @@
 		},
 		{
 			"include": "#base-types"
-		},
-		{
-			"include": "#entity"
 		}
 	],
 	"repository": {
@@ -66,14 +63,6 @@
 				{
 					"name": "constant.numeric.mik",
 					"match": "\\b[0-9]+\\b"
-				}
-			]
-		},
-		"entity": {
-			"patterns": [
-				{
-					"name": "entity.name.section",
-					"math": "\\b(@section|@secend|@debug|#yoink|#yoink-src)\\b"
 				}
 			]
 		},
