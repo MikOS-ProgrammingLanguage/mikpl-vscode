@@ -16,6 +16,9 @@
 		},
 		{
 			"include": "#base-types"
+		},
+		{
+			"include": "#yoink-section"
 		}
 	],
 	"repository": {
@@ -65,7 +68,14 @@
 					"match": "\\b[0-9]+\\b"
 				}
 			]
-		}
-	},
+		},
+		"yoink-section": {
+			"patterns": [
+				{
+					"name": "entity.name.section",
+					"math": "\\b(@section|@secend|@debug|#yoink|#yoink-src)\\b"
+				}
+			]
+		},
 	"scopeName": "source.mik"
 }
