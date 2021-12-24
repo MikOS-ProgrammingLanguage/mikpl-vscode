@@ -12,6 +12,9 @@
 			"include": "#comments"
 		},
 		{
+			"include": "#operators"
+		},
+		{
 			"include": "#block-comments"
 		},
 		{
@@ -19,6 +22,14 @@
 		}
 	],
 	"repository": {
+		"operators": {
+			"patters": [
+				{
+					"match": "\\+=|-=|\\*=|\\?=|=",
+					"name": "keyword.operator.assignement.compound.mik"
+				},
+			]
+		},
 		"keywords": {
 			"patterns": [
 				{
