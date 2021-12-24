@@ -23,7 +23,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.mik",
-					"match": "\\b(mikf|mikas|struct|estruct|if|else|elif|return|for|while|tcst|typedef|break|continue)\\b"
+					"match": "\\b(mikf|mikas|struct|estruct|if|else|elif|return|while|tcst|typedef|break|continue)\\b"
 				},
 				{
 					"name": "keyword.operator.mik",
